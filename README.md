@@ -19,4 +19,4 @@ _____________________________________________________
 
 TESTING
 The test cases are located in TEST_CASES.md
-Type the results of your tests into the TEST_RESULT.md, it has instructions on what to write there
+Document your results to TEST_RESULT.md, it has instructions on what to write there.
