@@ -1,71 +1,72 @@
 TEST_CASES
 
-Test #id: 1
-Title: Rotation
+Test Case #1: Rotation
 
-Given: Game is running and no platform has been rotated
-When: press 'a'
-Then: platform gets rotated and none of the paltforms can be rotated again afterwards
+Given the game is running and no platform has been rotated
+When the player presses 'A'
+Then the current platform rotates
+And no other platforms can be rotated afterward
+______________________________________________
 
-Test #id: 2
-Title: Platform gets cut correctly
+Test Case #2: Platform Gets Cut Correctly
 
-Given: Platform is coming from one of the sides
- When: Left click is pressed and platform is not alinged (out of bounds)
- Then: Platform gets cut so that it's within bounds
+Given a platform is incoming from one of the sides
+When the player left-clicks while the platform is not aligned (out of bounds)
+Then the platform gets cut so it fits within the bounds
+______________________________________________
 
-Test #id: 3
-Title: Next platform is resized correctly after cut
+Test Case #3: Next Platform is Resized Correctly After Cut
 
-Given: Platform has been cut
- When: New platform gets spawned to the scene
- Then: New platform has the same size as the cut version
+Given a platform has been cut
+When a new platform spawns
+Then the new platform has the same size as the cut version
+______________________________________________
 
-Test #id: 4
-Title: Platform cut correctly after rotation
+Test Case #4: Platform Cut Correctly After Rotation
 
-Given: Platform has been rotated
- When: Gets cut
- Then: Platform gets cut so that it's within bounds
+Given a platform has been rotated
+When it gets cut
+Then the cut keeps the platform within bounds
+______________________________________________
 
-Test #id: 5
-Title: Platform resized correctly after rotation
+Test Case #5: Platform Resized Correctly After Rotation
 
-Given: Rotated platform gets cut
- When: New platform spawns
- Then: New platform has the same size as the cut version
+Given a rotated platform has been cut
+When a new platform spawns
+Then the new platform has the same size as the cut version
+______________________________________________
 
-Test #id: 6
-Title: Placing and rotating at the same time
+Test Case #6: Placing and Rotating at the Same Time
 
-Given: Platform is coming from the side
- When: Place and rotate simultaneously
- Then: It gets placed and rotated; nothing out of the ordinary happens
+Given a platform is coming from the side
+When the player places and rotates the platform simultaneously
+Then it gets placed and rotated normally
+And no abnormal behavior occurs
+______________________________________________
 
-Test #id: 7
-Title: Particles appear when platform is alinged correctly
+Test Case #7: Particles Appear When Platform is Aligned
 
-Given: Platform incoming
- When: Alinged correctly
- Then: Particles appear around the platform's sides
+Given a platform is incoming
+When it becomes perfectly aligned
+Then particles appear around the platform’s edges
+______________________________________________
 
-Test #id: 8
-Title: Particles appear when rotated
+Test Case #8: Particles Appear When Rotated
 
-Given: Platform hasn't been rotated
- When: Platform gets rotated
- Then: Particles appear to show the area for alinging the platform
+Given the platform has not been rotated
+When the player rotates it
+Then particles appear to indicate the alignment area
+______________________________________________
 
-Test #id: 9
-Title: Score gets updated correctly
+Test Case #9: Score Gets Updated Correctly
 
-Given: Platform incoming
- When: Gets placed and game is not lost
- Then: Score gets updated by one
+Given a platform is incoming
+When it is placed and the game is not over
+Then the score increases by 1
+______________________________________________
 
-Test #id: 10
-Title: Time to break it
+Test Case #10: Time to Break It
 
-Given: Game is running
- When: Do whatever you like in order to break it somehow
- Then: See if you can find a way to break it
+Given the game is running
+When the player performs unexpected or extreme actions (e.g., spamming rotation/placement, overlapping, boundary cases)
+Then verify if any crashes, freezes, or logic bugs occur
