@@ -4,7 +4,7 @@ TEST_CASES
 
 **Given** the game is running and no platform has been rotated
 
-**When** the player presses 'A' "\n"
+**When** the player presses 'A'
 
 **Then** the current platform rotates
 
@@ -85,5 +85,6 @@ ______________________________________________
 **When** the player performs unexpected or extreme actions (e.g., spamming rotation/placement, overlapping, boundary cases)
 
 Then verify if any crashes, freezes, or logic bugs occur
+
 
 
