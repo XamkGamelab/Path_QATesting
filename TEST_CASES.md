@@ -84,7 +84,8 @@ ______________________________________________
 
 **When** the player performs unexpected or extreme actions (e.g., spamming rotation/placement, overlapping, boundary cases)
 
-Then verify if any crashes, freezes, or logic bugs occur
+**Then** verify if any crashes, freezes, or logic bugs occur
+
 
 
 
