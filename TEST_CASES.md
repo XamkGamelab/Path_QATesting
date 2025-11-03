@@ -3,7 +3,7 @@ TEST_CASES
 Test Case #1: Rotation
 
 Given the game is running and no platform has been rotated
-When the player presses 'A'
+When the player presses 'A' "\n"
 Then the current platform rotates
 And no other platforms can be rotated afterward
 ______________________________________________
@@ -69,4 +69,5 @@ Test Case #10: Time to Break It
 
 Given the game is running
 When the player performs unexpected or extreme actions (e.g., spamming rotation/placement, overlapping, boundary cases)
+
 Then verify if any crashes, freezes, or logic bugs occur
